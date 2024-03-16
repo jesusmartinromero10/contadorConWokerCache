@@ -83,7 +83,6 @@ export class TimerPlayerComponent extends LitElement {
             outline:none;
          }
     `;
-
     connectedCallback() {
         super.connectedCallback();
         this.timer = this.querySelector('timer-component');
@@ -105,7 +104,6 @@ export class TimerPlayerComponent extends LitElement {
         const timerComp = document.getElementById("time")
         const inputValor = evento.target.previousElementSibling.querySelector('#texto').value;
         timerComp.setAttribute("start", inputValor)
-        console.log('timerlog',timerComp)
         this.reset()
         
         
@@ -123,8 +121,8 @@ export class TimerPlayerComponent extends LitElement {
             </div>
             <br>
             <br>
-            <div><label type = "text" for="texto">Configurar<input id="texto" type="text"> segundos</label></div>
-            <button @click="${this.cambiarNumeracion}">Guardar</button>
+            <div><label type = "text" for="texto">Configurar<input id="texto" type="number"> segundos</label></div>
+            <button id="aa" @click="${this.cambiarNumeracion}">Guardar</button>
         `;
     }
 

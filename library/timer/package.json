@@ -1,0 +1,60 @@
+{
+  "name": "@qualentumjesus/timertimer",
+  "version": "1.0.0",
+  "description": "contador cuenta atras",
+  "main": "index.js",
+  "scripts": {
+    "publish:npm":"npm publish --access public",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:start": "cd dist && PORT=8080 npx serve",
+    "start": "http-server -c-l dist"
+  },
+  "esLintConfig": {
+    "extrends": "node_modules/standard/esLintrc.json"
+  },
+  "author": "Jesus Martin",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "lit": "^3.0.2",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1",
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "standard": "^17.1.0",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "lit": "^3.0.2",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1",
+    "http-server": "^14.1.1"
+  }
+}
